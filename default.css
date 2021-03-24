@@ -18,7 +18,7 @@ html {
   overflow: none;
   background-color: var(--Light-Black);
 
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 div {
@@ -61,6 +61,11 @@ p {
   letter-spacing: 1px;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 /* MISC */
 
 /* width */
@@ -93,7 +98,7 @@ p {
 }
 
 .container {
-  padding: 10px 10px 10px 10px;
+  padding: 50px;
 }
 
 /* navbar */
@@ -161,6 +166,13 @@ p {
   grid-template-columns: repeat(1, auto);
 }
 
+.grid-images {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: none;
+  row-gap: none;
+}
+
 /* intro */
 #intro {
   background-image: url(./images/bg-image.gif);
@@ -219,11 +231,30 @@ p {
 }
 
 .about img {
-  width: 100%;
-  max-width: 90%;
-  height: auto;
-  border-radius: 25%;
-  padding: 30px;
+  margin: 10px;
+}
+
+.profile {
+  border-radius: 80%;
+  max-width: 50%;
+  padding: 5px;
+  border: solid var(--Blue) 3px;
+}
+
+.about-icon {
+  max-width: 40%;
+}
+
+.languages {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  color: var(--Blue);
+}
+
+.languages li {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 20px;
 }
 
 .about p {
@@ -234,5 +265,23 @@ p {
 
 .about h1 {
   padding-top: 15px;
+  font-size: 35px;
+}
+
+/* works */
+
+#works {
+  background-color: var(--Silver);
+  padding: 10px;
+}
+
+.work-container {
+  margin: 26px;
+  padding: 20px;
+  background-color: white;
+}
+
+#works h1 {
+  padding: 15px 0px;
   font-size: 35px;
 }
