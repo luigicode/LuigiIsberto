@@ -117,7 +117,7 @@ p {
 
 /* intro */
 #intro {
-  background-image: url(/images/bg-image.gif);
+  background-image: url(./images/bg-image.gif);
   background-size: cover;
   background-color: var(--Black);
 
