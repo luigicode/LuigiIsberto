@@ -6,23 +6,28 @@
 
         <meta name="viewport" charset="utf-8" />
         
-        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <link rel="stylesheet" href="default.css">
+        <link rel="stylesheet" href="mobile.css">
       
+        <link rel="icon" href="./images/icon.jpg">
     </head>
 
-    <nav id="navbar" class="grid-column-2"> 
-        <div>
-        <a href="">
-            <img src="./images/icon.jpg" alt="a cyan 'L' in a blueish diamond">
+    <nav id="navbar" > 
+        <div class="grid-row">
+        <a href="#intro">
+            <img src="./images/icon.jpg" alt="a cyan 'L' in a dark blue diamond">
         </a>
         </div>
-        <ul class="navbar-grid">
+        <div>
+            <ul class="navbar-grid">
             <li class="nav-item"><a href="#about">About</a></li>
             <li class="nav-item"><a href="#works">Works</a></li>
             <li class="nav-item"><a href="#contact">contact</a></li>
         </ul>
+        </div>
+        
     </nav>
 
     <body>
@@ -47,7 +52,7 @@
                         <div>
                             <img src="./images/profile.jpg" class="profile" alt="the funny owner of this portfolio"/>
                         </div> 
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p class="AT">fullstack developer</p>
                     </div>
                     
                 <div class="grid row">
@@ -121,75 +126,103 @@
                 <div>
                     <ul class="grid-images">
                         <li class="lightbox">
-                            <img src="./images/Isberto.org.jpg" alt="Screenshot of Isberto 1 of 4">
-                            
-                                <div class="middle slide-right">
-                                    <div class="background-middle">
-                                        <p>Isberto was the first site I have ever made.</p>
-                                        <a href="http://isberto.org/"></a>
-                                    </div>
-                                </div>
-                            
-                            
-                        </li>
-                        <li class="lightbox">
-                            <img src="./images/Aso Sanctuario.jpg" alt="Screenshot of Aso Sanctuario 2 of 4">
-                        
-                                <div class="middle slide-left">
-                                    <div class="background-middle">
-                                        <p>Aso Sanctuario a site for dog lovers from all reaches of the Philippines</p>
-                                        <a href="https://asosanctuario.com/"></a>
-                                </div>
-                        </div>
-                            
-                        </li>
-                        <li class="lightbox">
-                            <img src="./images/Balay Agila.jpg" alt="Screenshot of Balay Agila 3 of 4">
-                       
-                              <div class="middle slide-right">
-                                <div class="background-middle">
-                                    <p></p>
-                                    <a href="https://balayagila.com/"></a>
-                                </div>
-                        </div>
-                            
-                        </li>
-                         <li class="lightbox">
-                            <img src="./images/Veggie Verde.jpg" alt="Screenshot of Veggie Verde 4 of 4">
+                            <img src="./images/Balay Agila.jpg" alt="Screenshot of Balay Agila 1 of 5">
                        
                               <div class="middle slide-left">
                                 <div class="background-middle">
-                                    <p></p>
-                                    <a href="https://veggy.netlify.app/"></a>
+                                    <p>Balay Agila was made for properties in the Philippines</p>
+                                    <a href="https://balayagila.com/" target="_blank noopener">
+                                        <img src="./images/Agila.BA.ico" alt="logo of balay Agila">
+                                    </a>
                                 </div>
                         </div>
-                            
                         </li>
-                    </ul>
+                         <li class="lightbox">
+                            <img src="./images/Veggie Verde.jpg" alt="Screenshot of Veggie Verde 2 of 5">
+                              <div class="middle slide-right">
+                                <div class="background-middle">
+                                    <p>Veggie Verde, a site based on organic greens</p>
+                                    <a href="https://veggy.netlify.app/" target="_blank noopener">
+                                        <img src="./images/Plant.VV.png" alt="logo of veggie verde">
+                                    </a>
+                                </div>
+                        </div>
+                    </li>
+                        <li class="lightbox">
+                            <img src="./images/Aso Sanctuario.jpg" alt="Screenshot of Aso Sanctuario 3 of 5">
+                        
+                                <div class="middle slide-left">
+                                    <div class="background-middle">
+                                        <p>Aso Sanctuario, a site for dog lovers from all reaches of the Philippines</p>
+                                        <a href="https://asosanctuario.com/" target="_blank noopener">
+                                            <img src="./images/Golden paw.AS.png" alt="aso sanctuario logo">
+                                        </a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                           <li class="lightbox">
+                            <img src="./images/Olbl screenshot.png" alt="Screenshot of OLBL.org 4 of 5">
+                            
+                                <div class="middle slide-right">
+                                    <div class="background-middle">
+                                        <p>OLBL was made for my church youth group.</p>
+                                        <a href="http://olbl.org/" target="_blank noopener">
+                                            <img src="./images/OLBL.png " alt="olbl logo">
+                                        </a>
+                                    </div>
+                                </div>
+                             </li>
+                             <li class="lightbox">
+                                <img src="./images/Isberto.org.jpg" alt="Screenshot of Isberto 5 of 5">
+                                
+                                    <div class="middle slide-left">
+                                        <div class="background-middle">
+                                            <p>Isberto.Org was the first site I have ever made.</p>
+                                            <a href="http://isberto.org/" target="_blank noopener">is.</a>
+                                        </div>
+                                    </div>
+                                 </li>
+                         </ul>
+                    </div>
                 </div>
-            </div>
         </section>
 
         <section id="contact">
             <div class="contact">
+                <h1>Interested?</h1>
+                <h3>Here is my Email</h3>
+                <div class="grid-column-1">
+                    <h4>Luigiisberto@balayagila.admin</h4>
+                    <i class="fa fa-envelope"></i>
+                </div>
+                
+                
+                
             <ul class="contact-grid">
-                <li>
-                    <i class="fas fa-facebook"></i>
+                <li class="media">
+                    <a class="fa fa-facebook" href=""></a>
                 </li>
-                <li>
-
+                <li class="media">
+                    <a class="fa fa-linkedin" href=""></a>
                 </li>
-                <li>
-
+                <li class="media">
+                    <a class="fa fa-instagram" href=""></a>
                 </li>
-                <li>
-
+                <li class="media">
+                    <a class="fa fa-twitter" href=""></a>
                 </li>
             </ul>
             </div>
-        </section>
-        <footer>
 
+        </section>
+
+        
+
+        <footer>
+        <div class="copyright">
+          <small>@2021 Luigi Isberto - all rights reserved</small>           
+        </div>
          
         </footer>
     </body>
