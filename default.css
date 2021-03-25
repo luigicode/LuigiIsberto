@@ -68,6 +68,85 @@ img {
 
 /* MISC */
 
+.lightbox {
+  position: relative;
+  width: 100%;
+}
+
+.lightbox img {
+  max-width: 100%;
+}
+
+.lightbox li {
+  width: 0%;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  width: 50%;
+  position: relative;
+
+  bottom: 10%;
+
+  text-align: center;
+}
+
+.background-middle {
+  opacity: 0.7;
+  background-color: white;
+}
+
+.middle div {
+  position: absolute;
+  color: var(--Light-Black);
+  font-size: 16px;
+  padding: 16px 32px;
+  bottom: 50%;
+}
+
+.middle p {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--Light-Black);
+}
+
+@keyframes right_to_left {
+  from {
+    margin-left: 10vw;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes left_to_right {
+  from {
+    margin-left: -5vw;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+.lightbox:hover img {
+  opacity: 0.4;
+}
+
+.lightbox:hover .middle {
+  opacity: 1;
+  position: absolute;
+  transition: 0.5 ease;
+}
+
+.lightbox:hover .slide-right {
+  animation: right_to_left 0.5s ease;
+}
+
+.lightbox:hover .slide-left {
+  animation: left_to_right 0.5s ease;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 4px;
@@ -122,6 +201,7 @@ img {
   width: 100%;
   height: auto;
   max-width: 10%;
+  padding: 15px;
 }
 
 .navbar-grid {
@@ -159,6 +239,13 @@ img {
 .grid-column-2 {
   display: grid;
   grid-template-columns: repeat(2, auto);
+  gap: 0;
+}
+
+.grid-column-1 {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  gap: 0;
 }
 
 .grid-row {
@@ -169,8 +256,8 @@ img {
 .grid-images {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: none;
-  row-gap: none;
+  gap: 0;
+  row-gap: 0;
 }
 
 /* intro */
@@ -285,3 +372,5 @@ img {
   padding: 15px 0px;
   font-size: 35px;
 }
+
+/* contact */
