@@ -10,7 +10,8 @@
 
         <link rel="stylesheet" href="default.css">
         <link rel="stylesheet" href="mobile.css">
-      
+        <link rel="stylesheet" media="screen and (max-width: 769px)" href="window.css">
+
         <link rel="icon" href="./images/icon.jpg">
     </head>
 
@@ -22,22 +23,25 @@
         </div>
         <div>
             <ul class="navbar-grid">
-            <li class="nav-item"><a href="#about">About</a></li>
-            <li class="nav-item"><a href="#works">Works</a></li>
-            <li class="nav-item"><a href="#contact">contact</a></li>
+            <a href="#about">
+                <li class="nav-item"> About </li></a>
+            <a href="#works">
+                <li class="nav-item"> Works </li></a>
+            <a href="#contact">
+                <li class="nav-item"> Contact </li></a>
         </ul>
         </div>
         
     </nav>
 
     <body>
-      
+    
 
         <section id="intro">
             <div class="background">
                 <h1>I'm <b>Luigi isberto</b></h1>
                 
-                <button class="intro-button" ><a href="#about">Who am I? </a><div class="arrow right"></div></button>
+                <button class="intro-button" >I make startups<div class="arrow right"></div></button>
             </div>
         </section> 
     
@@ -52,13 +56,13 @@
                         <div>
                             <img src="./images/profile.jpg" class="profile" alt="the funny owner of this portfolio"/>
                         </div> 
-                        <p class="AT">fullstack developer</p>
+                        <p class="AT">Fullstack Developer</p>
                     </div>
                     
                 <div class="grid row">
-                <p class="Bio">I'm a Fullstack Developer from Philippines, Manila.
+                <p class="Bio">I'm a Fullstack Developer from Manila, Philippines.
 
-                    I've been coding for a few Years now.
+                    I've been coding for 2 Years now.
                 </p>
 
                     <div>
@@ -67,31 +71,31 @@
                             <li class="grid-row">
                                 Html 
                                 <span>
-                                  <img src="./images/HTML5.jpg" alt="html logo 1 of 8" class="about-icon">
+                                <img src="./images/HTML5.jpg" alt="html logo 1 of 8" class="about-icon">
                                 </span>
                             </li>
                             <li class="grid-row">
                                 Tailwind 
                                 <div>
-                                  <img class="about-icon" src="./images/Tailwind.jpg" alt="Tailwind Css logo 2 of 8">
+                                <img class="about-icon" src="./images/Tailwind.jpg" alt="Tailwind Css logo 2 of 8">
                                 </div>
                             </li>
                             <li class="grid-row">
-                                 PostgreSQL
+                                PostgreSQL
                                 <div>
-                                  <img class="about-icon" src="./images/Postgres.jpg" alt="Postgres logo 3 of 8">
+                                <img class="about-icon" src="./images/Postgres.jpg" alt="Postgres logo 3 of 8">
                                 </div>
                             </li>
                             <li class="grid-row">
                                 Node 
                                 <div>
-                                  <img class="about-icon" src="./images/Node.png" alt="Node logo 4 of 8">
+                                <img class="about-icon" src="./images/Node.png" alt="Node logo 4 of 8">
                                 </div>
                             </li>
                             <li class="grid-row">
                                 React 
                                 <div>
-                                  <img class="about-icon" src="./images/react.jpg" alt="React logo 5 of 8">
+                                <img class="about-icon" src="./images/react.jpg" alt="React logo 5 of 8">
                                 </div>
                             </li>
                             <li>
@@ -116,7 +120,7 @@
                     </div>
                 </div>
             </div>
-             </div>   
+            </div>   
             </div>
         </section>
 
@@ -127,8 +131,8 @@
                     <ul class="grid-images">
                         <li class="lightbox">
                             <img src="./images/Balay Agila.jpg" alt="Screenshot of Balay Agila 1 of 5">
-                       
-                              <div class="middle slide-left">
+                    
+                            <div class="middle slide-left">
                                 <div class="background-middle">
                                     <p>Balay Agila was made for properties in the Philippines</p>
                                     <a href="https://balayagila.com/" target="_blank noopener">
@@ -137,9 +141,9 @@
                                 </div>
                         </div>
                         </li>
-                         <li class="lightbox">
+                        <li class="lightbox">
                             <img src="./images/Veggie Verde.jpg" alt="Screenshot of Veggie Verde 2 of 5">
-                              <div class="middle slide-right">
+                            <div class="middle slide-right">
                                 <div class="background-middle">
                                     <p>Veggie Verde, a site based on organic greens</p>
                                     <a href="https://veggy.netlify.app/" target="_blank noopener">
@@ -161,7 +165,7 @@
                             </div>
                         </li>
                         
-                           <li class="lightbox">
+                        <li class="lightbox">
                             <img src="./images/Olbl screenshot.png" alt="Screenshot of OLBL.org 4 of 5">
                             
                                 <div class="middle slide-right">
@@ -172,8 +176,8 @@
                                         </a>
                                     </div>
                                 </div>
-                             </li>
-                             <li class="lightbox">
+                            </li>
+                            <li class="lightbox">
                                 <img src="./images/Isberto.org.jpg" alt="Screenshot of Isberto 5 of 5">
                                 
                                     <div class="middle slide-left">
@@ -182,37 +186,43 @@
                                             <a href="http://isberto.org/" target="_blank noopener">is.</a>
                                         </div>
                                     </div>
-                                 </li>
-                         </ul>
+                                </li>
+                        </ul>
                     </div>
                 </div>
         </section>
 
         <section id="contact">
-            <div class="contact">
-                <h1>Interested?</h1>
-                <h3>Here is my Email</h3>
+            <div class="contact grid-row">
+                <div>
+                        <h1>Interested?</h1>
+                    <h3>Here is my Email</h3>
                 <div class="grid-column-1">
                     <h4>Luigiisberto@balayagila.admin</h4>
                     <i class="fa fa-envelope"></i>
                 </div>
+            </div>
                 
+                <div>
+                <ul >
+                    <div class="contact-grid">
+                        <li class="media">
+                    <a class="fa fa-facebook" href="https://www.facebook.com/luigi.isberto/" alt="facebook" target="_blank noopener"></a>
+                </li>
+                <li class="media">
+                    <a class="fa fa-linkedin" href="https://www.linkedin.com/in/luigi-isberto-a50371146/" alt="linkedin" target="_blank noopener"></a>
+                </li>
+                <li class="media">
+                    <a class="fa fa-instagram" href="" alt="instagram" target="_blank noopener"></a>
+                </li>
+                <li class="media">
+                    <a class="fa fa-twitter" href="" alt="twitter" target="_blank noopener"></a>
+                </li>
+                    </div>
                 
-                
-            <ul class="contact-grid">
-                <li class="media">
-                    <a class="fa fa-facebook" href=""></a>
-                </li>
-                <li class="media">
-                    <a class="fa fa-linkedin" href=""></a>
-                </li>
-                <li class="media">
-                    <a class="fa fa-instagram" href=""></a>
-                </li>
-                <li class="media">
-                    <a class="fa fa-twitter" href=""></a>
-                </li>
-            </ul>
+            </ul> 
+                </div>
+            
             </div>
 
         </section>
@@ -221,9 +231,9 @@
 
         <footer>
         <div class="copyright">
-          <small>@2021 Luigi Isberto - all rights reserved</small>           
+        <small>@2021 Luigi Isberto - all rights reserved</small>           
         </div>
-         
+        
         </footer>
     </body>
 

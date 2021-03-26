@@ -96,9 +96,7 @@ small {
   transition: 0.5s ease;
   opacity: 0;
   width: 50%;
-  position: relative;
-
-  bottom: 10%;
+  position: absolute;
 
   text-align: center;
 }
@@ -111,7 +109,7 @@ small {
 .background-middle a {
   font-size: 26px;
   font-weight: bold;
-  color: var(--Blue);
+  color: #51a59a;
 }
 
 .background-middle img {
@@ -119,8 +117,7 @@ small {
 }
 
 .background-middle:hover,
-a,
-img {
+a {
   opacity: 1;
 }
 
@@ -128,6 +125,7 @@ img {
   position: absolute;
   color: var(--Light-Black);
   font-size: 16px;
+  width: 50%;
   padding: 16px 32px;
   bottom: 50%;
 }
@@ -223,6 +221,7 @@ img {
   display: grid;
   width: 100%;
   height: 8vh;
+  min-height: 8vh;
   max-height: 10vh;
 }
 
@@ -234,33 +233,41 @@ img {
 }
 
 .navbar-grid {
-  margin: 0px 10px 0px 20px;
-  padding: 10px;
+  margin: 0px 5px 0px 15px;
+  padding: 0px 10;
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 0px;
+  width: 60px;
 
-  text-align: right;
-}
-
-.nav-item {
-  margin: 10px;
   text-align: center;
 }
 
-.nav-item a {
-  color: var(--Blue);
+.nav-item {
+  background-color: var(--Light-Blue);
+  padding: 10px 0px 17px 0px;
+  margin: 0px auto;
+  width: 100px;
+  height: auto;
 
-  font-size: 15px;
+  text-align: center;
+  border: solid var(--Light-Blue) 2px;
 }
 
-.nav-item:hover a {
+.navbar-grid a {
+  color: var(--Light-Black);
+
+  font-size: 20px;
+}
+
+.navbar-grid:hover a {
   color: var(--Light-Blue);
   cursor: pointer;
 }
 
 .nav-item:hover {
   cursor: pointer;
+  background-color: var(--Light-Black);
 }
 /* grid */
 
@@ -342,15 +349,15 @@ img {
   display: inline-block;
 }
 
-.intro-button a {
+.intro-button {
   color: white;
 }
 
 .intro-button:hover {
   background-color: var(--Silver);
 }
-.intro-button:hover a {
-  color: var(--Light-Black);
+.intro-button:hover {
+  color: var(--Black);
 }
 
 /* about */
@@ -430,6 +437,16 @@ img {
   color: white;
   padding: 45px;
   border-top: solid var(--Black) 5 px;
+}
+
+#contact ul {
+  margin: 40px 0vw 40px 20vw;
+  text-align: center;
+  width: 0px;
+}
+
+#contact li {
+  width: 10rem;
 }
 
 .media a {

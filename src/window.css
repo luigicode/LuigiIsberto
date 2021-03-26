@@ -1,4 +1,4 @@
-@media screen and (max-device-width: 768px) {
+@media screen and (min-width: 768px) {
   .languages {
     grid-template-columns: repeat(2, auto);
   }
@@ -35,7 +35,7 @@
 
   .nav-item {
     grid-template-columns: none;
-    padding: 10px 9px 39px 20px;
+    padding: 10px 0px 39px 0px;
     margin: 0px;
   }
   .work-container {
@@ -59,24 +59,24 @@
   }
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav-item {
-    padding: 13px 20px 15px 20px;
+    padding: 3px 5px 5px 5px;
     margin: 0px;
   }
 }
 
-@media screen and (max-device-width: 425px) {
+@media screen and (min-width: 425px) {
   #navbar img {
-    max-width: 200px;
+    max-width: 70px;
   }
 
   #navbar a {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .nav-item {
-    padding: 31px 25px 70px 25px;
+    padding: 10px 5px 10px 0px;
     margin: 0px;
   }
 }
