@@ -253,12 +253,13 @@ a {
 }
 
 .navbar-grid a {
-  color: var(--Light-Black);
+  color: var(--Light-Blue);
 
   font-size: 20px;
 }
 
 .navbar-grid:hover a {
+  color: var(--Light-Blue);
   cursor: pointer;
 }
 
