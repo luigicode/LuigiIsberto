@@ -244,14 +244,12 @@ a {
 }
 
 .nav-item {
-  background-color: var(--Light-Blue);
   padding: 10px 0px 17px 0px;
   margin: 0px auto;
   width: 100px;
   height: auto;
 
   text-align: center;
-  border: solid var(--Light-Blue) 2px;
 }
 
 .navbar-grid a {
@@ -261,7 +259,6 @@ a {
 }
 
 .navbar-grid:hover a {
-  color: var(--Light-Blue);
   cursor: pointer;
 }
 
